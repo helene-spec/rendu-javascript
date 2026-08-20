@@ -11,10 +11,22 @@
 </head>
 
 <body>
-    <div id="connect4"></div>
+    <div id="game-wrapper">
+
+        <div id="status-bar">
+            Player <span id="player">red</span> has to play
+        </div>
 
 
-    <script src="game.js"></script>
+        <div id="connect4"></div>
+
+        <div id="controls">
+            <button id="restart">Reset</button>
+            <button id="undo">Cancel last action</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
     <script src="connect4.js"></script>
 </body>
 
