@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAME 2048</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="game">
+        <div class="header-game">
+            <div class="menu-game">
+                <button id="menu-game-btn"><i class="fa-solid fa-bars"></i>2048</button>
+            </div>
+            <div class="info-game">
+                <div class="score-nombre">
+                    <span class="score">Score</span>
+                    <span class="score-value">0</span>  
+                </div>
+                <div class="best-score-nombre">
+                    <span class="best-score">Best</span>
+                    <span class="best-score-value">0</span>
+                </div>
+            </div>
+            <div class="buttons-feedback-game">
+                <button id="feedback-game-btn">Give Feedback</button>
+                <button id="new-game-btn">New Game</button>
+            </div>
+        </div>
+        
+        <div id="game-board"></div>
+    </div>
+    
+    <script src="2048.js"></script>
+    <script>
+        $('.game').game2048();
+    </script>
+    </body>
+</html>
