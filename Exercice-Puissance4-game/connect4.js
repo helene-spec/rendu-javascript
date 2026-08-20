@@ -130,7 +130,7 @@ class Connect4 {
 
         if (this.checkForWinner(cellData.x, cellData.y, player.id)) {
             this.isGameOver = true;
-            $('#status-display').text(`${player.name} a gagné ! 🎉`);
+            $('#status-display').text(`${player.name} a gagné !`);
             return;
         }
 
